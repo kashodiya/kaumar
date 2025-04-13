@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaumar</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@3.7.15/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@3.7.15/dist/vuetify-labs.min.css" rel="stylesheet">
+  <style>
+  </style>
+
+  <!-- <script type="text/x-template" id="xyz-template">
+    <v-container fluid>
+      <div class="text-h5">Xys</div>
+      <p>About xyz</p>
+    </v-container>
+  </script> -->
+
+  <script type="text/x-template" id="about-template">
+    <v-container fluid>
+      <v-card>
+        <v-card-title class="text-h5">About</v-card-title>
+        <v-card-text>
+          <p>A server tool app.</p>
+        </v-card-text>
+      </v-card>
+    </v-container>
+  </script>
+
+  <script type="text/x-template" id="home-template">
+    <v-container fluid class="text-center">
+      <p class="text-h2 font-weight-bold mt-10">
+        Welcome to <i style="color: purple">Kaumar</i>
+      </p>
+      <div class="text-h4 mt-10 font-weight-bold">
+        <p>Your Supportive Community for Indian-Origin Parents and Young Adults</p>
+        <p class="mt-5">Connect, Share, and Thrive Together!</p>
+      </div>
+      <p class="text-h5 mt-10">Join a vibrant community where Indian-origin parents and young adults come together to support each other, share experiences, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives.</p>
+    </v-container>
+  </script>
+
+  <style>
+    .app-style {
+      background-image: url("images/app-bar-image.jpg");
+      background-size: 100% auto; /* Stretch to full width while maintaining aspect ratio */
+      background-position: top; /* Align the image to the top */
+      width: 100%; /* Ensure the element takes the full width of its container */
+  
+
+    }
+  </style>
 </head>
+
 <body>
-Welcome to kaumar.com    
+  <div id="app">
+    <v-app  class="app-style">
+      <v-app-bar flat color="transparent" XXimage="/images/app-bar-image.jpg" XXdensity="prominent">
+        <v-app-bar-title class="font-weight-bold">Kaumar</v-app-bar-title>
+        <v-spacer></v-spacer>
+        <v-btn class="XXmt-5" to="/">Home</v-btn>
+        <v-btn class="XXmt-5" to="/about">About</v-btn>
+      </v-app-bar>
+
+      <v-main>
+        <router-view></router-view>
+      </v-main>
+
+      <v-snackbar v-model="snackbar" :color="snackbarColor">
+        {{ snackbarText }}
+        <template v-slot:actions>
+          <v-btn color="white" text @click="snackbar = false">Close</v-btn>
+        </template>
+      </v-snackbar>
+    </v-app>
+  </div>
+
+  <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@3.7.15/dist/vuetify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@3.7.15/dist/vuetify-labs.min.js"></script>
+  <script src="https://unpkg.com/vue-router@4.2.4/dist/vue-router.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+  <script>
+    const { createApp, ref } = Vue;
+    const { createVuetify } = Vuetify;
+    const { createRouter, createWebHashHistory } = VueRouter;
+
+    const store = {
+      state: {}
+    }
+
+    const Home = {
+      template: '#home-template',
+      data: function () {
+        return {
+          state: store.state,
+        }
+      },
+      methods: {
+      },
+      mounted() {
+        console.log('Home mounted');
+      },
+      created() {
+        console.log('Home created');
+      }
+    }
+
+    const About = {
+      template: '#about-template',
+      data: function () {
+        return {
+          state: store.state,
+        }
+      },
+      methods: {
+      },
+      mounted() {
+        console.log('About mounted');
+      },
+      created() {
+        console.log('About created');
+      }
+    }
+
+    const snackbarMixin = {
+      data() {
+        return {
+          snackbar: false,
+          snackbarText: '',
+          snackbarColor: 'success',
+        }
+      },
+      methods: {
+        showSnackbar(text, color = 'success') {
+          this.snackbarText = text;
+          this.snackbarColor = color;
+          this.snackbar = true;
+        }
+      }
+    };
+
+    const routes = [
+      { path: '/', name: 'Home', component: Home },
+      { path: '/about', name: 'About', component: About }
+    ];
+
+    const router = createRouter({
+      history: createWebHashHistory(),
+      routes
+    });
+
+    const vuetify = createVuetify({
+      theme: {
+        themes: {
+          light: {
+            dark: false
+          },
+        },
+      }
+    });
+
+    const app = createApp({
+      mixins: [snackbarMixin],
+
+      data() {
+        return {
+        };
+      },
+      methods: {
+      }
+    });
+
+    app.use(vuetify);
+    app.use(router);
+    const vm = app.mount('#app');
+  </script>
+
+  <script>
+  </script>
 </body>
+
 </html>
