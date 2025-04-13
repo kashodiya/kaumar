@@ -33,11 +33,11 @@
       <p class="text-h2 font-weight-bold mt-10">
         Welcome to <i style="color: purple">Kaumar</i>
       </p>
-      <div class="text-h4 mt-10 font-weight-bold">
-        <p>Your Supportive Community for Indian-Origin Parents and Young Adults</p>
+      <div class="text-h4 mt-15 font-weight-bold">
+        <p>Your Supportive Community for Indian-Origin Parents and Young Adults.</p>
         <p class="mt-5">Connect, Share, and Thrive Together!</p>
       </div>
-      <p class="text-h5 mt-10">Join a vibrant community where Indian-origin parents and young adults come together to support each other, share experiences, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives.</p>
+      <p class="text-h5 mt-10">Join a vibrant community where Indian-origin parents and young adults come together to support each other, share experiences, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives — membership is entirely free.</p>
 
       <v-row class="mt-10 ml-10 mr-10">
         <v-col
@@ -48,7 +48,7 @@
           class="d-flex">
           <v-card
             class="mx-auto flex-card" hover
-            @click="cardAction"
+            @click="cardAction(card.id)"
             max-width="500">
             <v-img
               class="align-end text-white"
@@ -64,6 +64,124 @@
               <v-btn XXcolor="orange" :text="card.buttonCaption"></v-btn>
             </v-card-actions> -->
           </v-card>
+        </v-col>
+      </v-row>
+
+
+      <v-row class="mt-10 ml-10 mr-10 Xtext-left">
+        <v-col>
+          <div ref="learnMore">
+            <v-row>
+              <v-col>
+                <v-card>
+                  <v-card-title class="mt-4">What is Kaumar Community?</v-card-title>
+                  <v-card-text>
+                    <p>Kaumar community for Indian-origin parents and their young adult children residing in the United States. Our focus is on creating a supportive and inclusive environment where members can share experiences, offer mutual support, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives.</p>
+                  </v-card-text>
+                  <v-card-title>Goals and Objectives:</v-card-title>
+                  <v-card-text>
+                    <v-list>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Cultivate a Sense of Belonging:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Create an inclusive environment where both parents and young adults feel connected and supported by like-minded individuals who understand and share similar cultural and familial values.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Mutual Support System:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Enable parents and young adults to offer and receive emotional, practical, and informational support from one another, fostering a collaborative and empathetic community.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Experience Sharing Platform:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Provide a dedicated space for parents to share their experiences, challenges, and successes in guiding their children through the process of finding life partners, and for young adults to share their perspectives, experiences, and advice on relationships and marriage.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Facilitate Intergenerational Understanding:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Promote meaningful interactions between parents and young adults to enhance mutual understanding, respect, and support across generations.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Empower Young Adults:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Equip young adults with the tools, resources, and support they need to navigate their relationships and marriage journeys confidently and successfully.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Cultural Preservation and Integration:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Support the preservation of Indian cultural values and traditions while helping members integrate these values into modern relationship dynamics in the US context.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Resource and Networking Hub:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Serve as a central hub for valuable resources, recommendations, and networking opportunities to aid both parents and young adults in their search for life partners and in building fulfilling relationships.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                    </v-list>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>            
+          </div>
+        </v-col>
+      </v-row>
+
+      <v-row class="mt-10 ml-10 mr-10">
+        <v-col>
+          <div ref="joinUs">
+            <v-card>
+              <v-card-title>Join Our Community</v-card-title>
+              <v-card-text>
+                <p>Welcome! We're excited to have you join our community. Follow the steps below to get started:</p>
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-title>Watch our tutorial videos</v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title><a href="https://www.youtube.com/watch?v=example1" target="_blank">Video 1: How to Register</a></v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title><a href="https://www.youtube.com/watch?v=example2" target="_blank">Video 2: Completing Your Profile</a></v-list-item-title>
+                  </v-list-item>
+                </v-list>
+                <v-btn color="primary" href="https://forms.gle/yourGoogleFormLink" target="_blank">Fill the Registration Form</v-btn>
+              </v-card-text>
+            </v-card>
+          </div>
+        </v-col>
+      </v-row>
+
+      <v-row class="mt-10 ml-10 mr-10">
+        <v-col>
+          <div ref="becomeVolunteer">
+            <v-card>
+              <v-card-title>Become Volunteer</v-card-title>
+              <v-card-text>
+                <p>Welcome! We're excited to have you join our community. Follow the steps below to get started:</p>
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-title>Watch our tutorial videos</v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title><a href="https://www.youtube.com/watch?v=example1" target="_blank">Video 1: How to Register</a></v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title><a href="https://www.youtube.com/watch?v=example2" target="_blank">Video 2: Completing Your Profile</a></v-list-item-title>
+                  </v-list-item>
+                  <!-- Add more videos as needed -->
+                </v-list>
+                <v-btn color="primary" href="https://forms.gle/yourGoogleFormLink" target="_blank">Fill the Registration Form</v-btn>
+              </v-card-text>
+            </v-card>
+
+
+          </div>
         </v-col>
       </v-row>
 
@@ -97,7 +215,7 @@
   <div id="app">
     <v-app  class="app-style">
       <v-app-bar flat color="transparent">
-        <v-app-bar-title class="font-weight-boldww"
+        <v-app-bar-title class="font-weight-bold"
           @click="$router.push('/')">
           Kaumar
         </v-app-bar-title>
@@ -142,19 +260,25 @@
           state: store.state,
           cards: [
             {
-              title: "Become a Part of Our Community",
-              description: "Ready to connect with like-minded individuals and start sharing your experiences? Join Kaumar today and become a part of a supportive network of Indian-origin parents and young adults.",
-              buttonCaption: "Join Us Now",
-              image: "/images/card-background.jpeg", // Replace with your image URL
-            },
-            {
-              title: "Discover What Kaumar Offers",
+              id: "learnMore",
+              title: "Learn More",
+              // title: "Discover What Kaumar Offers",
               description: "Curious about how Kaumar can support you and your family? Learn more about our community, events, resources, and the benefits of membership.",
               buttonCaption: "Learn More",
               image: "/images/card-background.jpeg", // Replace with your image URL
             },
             {
-              title: "Make a Difference with Kaumar",
+              id: "joinUs",
+              title: "Join Us Now",
+              // title: "Become a Part of Our Community",
+              description: "Ready to connect with like-minded individuals and start sharing your experiences? Join Kaumar today and become a part of a supportive network of Indian-origin parents and young adults.",
+              buttonCaption: "Join Us Now",
+              image: "/images/card-background.jpeg", // Replace with your image URL
+            },
+            {
+              id: "becomeVolunteer",
+              title: "Become a Volunteer",
+              // title: "Make a Difference with Kaumar",
               description: "Passionate about helping others? Become a volunteer and contribute to our community by supporting events, sharing your expertise, and making a positive impact.",
               buttonCaption: "Become a Volunteer",
               image: "/images/card-background.jpeg", // Replace with your image URL
@@ -163,9 +287,9 @@
         }
       },
       methods: {
-        cardAction(){
-          console.log('Card action');
-          
+        cardAction(id){
+          console.log(`Card action: ${id}`);
+          this.$refs[id].scrollIntoView({ behavior: 'smooth' });
         }
       },
       mounted() {
