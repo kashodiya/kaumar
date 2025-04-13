@@ -42,7 +42,7 @@
                   <v-list>
                     <v-list-item>
                       <v-list-item-title>
-                        1. What is the purpose of Kaumar?
+                        What is the purpose of Kaumar?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -52,7 +52,7 @@
                     </v-list-item>
                     <v-list-item>
                       <v-list-item-title>
-                        2. Who can join Kaumar?
+                        Who can join Kaumar?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -62,7 +62,7 @@
                     </v-list-item>
                     <v-list-item>
                       <v-list-item-title>
-                        3. Is there a membership fee?
+                        Is there a membership fee?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -79,7 +79,7 @@
                   <v-list>
                     <v-list-item>
                       <v-list-item-title>
-                        4. How is the community organized?
+                        How is the community organized?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -92,19 +92,32 @@
                     </v-list-item>
                     <v-list-item>
                       <v-list-item-title>
-                        5. What kind of activities does the community host?
+                        What kind of activities does the community host?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
                       <v-list-item-subtitle>
                         The community hosts a variety of activities, including:
-                        - Virtual meetups and social events
-                        - Q&A sessions with relationship experts
-                        - Workshops on relationship building and cultural preservation
-                        - Cultural celebration events
-                        - Resource sharing and success story sessions
+                        <ul>
+                          <li>Virtual meetups and social events</li>
+                          <li>Q&A sessions with relationship experts</li>
+                          <li>Workshops on relationship building and cultural preservation</li>
+                          <li>Cultural celebration events</li>
+                          <li>Resource sharing and success story sessions</li>
+                        </ul>
                       </v-list-item-subtitle>
                     </v-list-item>
+                    <v-list-item>
+                      <v-list-item-title>
+                        Is Kaumar affiliated with any other institutions??
+                      </v-list-item-title>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-subtitle>
+                        No, Kaumar is an independent community and is not affiliated with any other institutions, organizations, or entities. We operate solely to support our members and foster a sense of community among Indian-origin parents and young adults in the United States.
+                      </v-list-item-subtitle>
+                    </v-list-item>
+
                   </v-list>
                 </v-expansion-panel-text>
               </v-expansion-panel>
@@ -114,7 +127,7 @@
                   <v-list>
                     <v-list-item>
                       <v-list-item-title>
-                        6. How can I get involved in the community?
+                        How can I get involved in the community?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -128,7 +141,7 @@
                     </v-list-item>
                     <v-list-item>
                       <v-list-item-title>
-                        7. Can I invite friends or family to join the community?
+                        Can I invite friends or family to join the community?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -145,7 +158,7 @@
                   <v-list>
                     <v-list-item>
                       <v-list-item-title>
-                        8. Is Kaumar for finding life partners within the community?
+                        Is Kaumar for finding life partners within the community?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -162,7 +175,7 @@
                   <v-list>
                     <v-list-item>
                       <v-list-item-title>
-                        9. How does the community ensure member privacy and safety?
+                        How does the community ensure member privacy and safety?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -172,7 +185,7 @@
                     </v-list-item>
                     <v-list-item>
                       <v-list-item-title>
-                        10. What should I do if I encounter inappropriate behavior?
+                        What should I do if I encounter inappropriate behavior?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -189,7 +202,7 @@
                   <v-list>
                     <v-list-item>
                       <v-list-item-title>
-                        11. Are there any resources available for members?
+                        Are there any resources available for members?
                       </v-list-item-title>
                     </v-list-item>
                     <v-list-item>
@@ -545,30 +558,32 @@
   <style>
     .app-style {
       background-image: url("images/app-bar-image.jpg");
-      background-size: 100% auto; /* Stretch to full width while maintaining aspect ratio */
-      background-position: top; /* Align the image to the top */
-      width: 100%; /* Ensure the element takes the full width of its container */
+      background-size: 100% auto;
+      /* Stretch to full width while maintaining aspect ratio */
+      background-position: top;
+      /* Align the image to the top */
+      width: 100%;
+      /* Ensure the element takes the full width of its container */
     }
 
     .flex-card {
       display: flex;
       flex-direction: column;
-      height: 400px; /* Set a fixed height for the card */
+      height: 400px;
+      /* Set a fixed height for the card */
     }
 
     .flex-grow-1 {
       flex-grow: 1;
-    }    
-
+    }
   </style>
 </head>
 
 <body>
   <div id="app">
-    <v-app  class="app-style">
+    <v-app class="app-style">
       <v-app-bar flat color="transparent">
-        <v-app-bar-title class="font-weight-bold"
-          @click="$router.push('/')">
+        <v-app-bar-title class="font-weight-bold" @click="$router.push('/')">
           Kaumar
         </v-app-bar-title>
 
@@ -585,27 +600,25 @@
 
       <v-footer class="text-center d-flex flex-column ga-2 py-4 mt-10" color="indigo-lighten-1">
         <div class="d-flex ga-3">
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            :icon="icon"
-            density="comfortable"
-            variant="text"
-          ></v-btn>
+          <v-btn v-for="icon in icons" :key="icon" :icon="icon" density="comfortable" variant="text"></v-btn>
         </div>
-    
+
         <v-divider class="my-2" thickness="2" width="50"></v-divider>
-    
+
         <div class="text-caption font-weight-regular opacity-60">
-          Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent
+          ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet
+          dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum
+          ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         </div>
-    
+
         <v-divider></v-divider>
-    
+
         <div>
-          {{ new Date().getFullYear() }} — <strong>Kaumar</strong>
+          © 2025 Kaumar. All rights reserved.
         </div>
-      </v-footer>      
+      </v-footer>
 
       <v-snackbar v-model="snackbar" :color="snackbarColor">
         {{ snackbarText }}
@@ -661,11 +674,92 @@
               buttonCaption: "Become a Volunteer",
               image: "/images/card-background.jpeg", // Replace with your image URL
             }
+          ],
+          faqs: [
+            {
+              "title": "General",
+              "faqs": [
+                {
+                  "question": "What is the purpose of Kaumar?",
+                  "answer": "Kaumar is a dedicated community for Indian-origin parents and their young adult children residing in the United States. Our primary goal is to create a supportive and inclusive environment where members can share experiences, offer mutual support, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives."
+                },
+                {
+                  "question": "Who can join Kaumar?",
+                  "answer": "Kaumar is open to Indian-origin parents and their young adult children (typically aged 18-35) who are interested in fostering a sense of belonging, mutual support, and cultural preservation within a community setting."
+                },
+                {
+                  "question": "Is there a membership fee?",
+                  "answer": "Kaumar is currently a free-to-join community. However, we may introduce membership tiers or optional contributions in the future to support community activities and resources."
+                }
+              ]
+            },
+            {
+              "title": "Community Structure",
+              "faqs": [
+                {
+                  "question": "How is the community organized?",
+                  "answer": "The community is organized into three distinct subgroups:\n- Parents Group: Exclusively for parents to discuss strategies, share insights, and support each other.\n- Young Adults Group: A space for young adults to engage in discussions, seek advice, and share their perspectives.\n- Common Group: An inclusive forum where both parents and young adults can interact and exchange ideas."
+                },
+                {
+                  "question": "What kind of activities does the community host?",
+                  "answer": "The community hosts a variety of activities, including:\n- Virtual meetups and social events\n- Q&A sessions with relationship experts\n- Workshops on relationship building and cultural preservation\n- Cultural celebration events\n- Resource sharing and success story sessions"
+                },
+                {
+                  "question": "Is Kaumar affiliated with any other institutions?",
+                  "answer": "No, Kaumar is an independent community and is not affiliated with any other institutions, organizations, or entities. We operate solely to support our members and foster a sense of community among Indian-origin parents and young adults in the United States."
+                }
+              ]
+            },
+            {
+              "title": "Participation and Engagement",
+              "faqs": [
+                {
+                  "question": "How can I get involved in the community?",
+                  "answer": "You can get involved by:\n- Joining one or more of the subgroups that align with your interests.\n- Participating in community events and activities.\n- Sharing your experiences, challenges, and successes in the discussion forums.\n- Offering support and advice to other members."
+                },
+                {
+                  "question": "Can I invite friends or family to join the community?",
+                  "answer": "Yes, we encourage members to invite friends and family who would benefit from the community’s support and resources. You can share the community’s invitation link with them."
+                }
+              ]
+            },
+            {
+              "title": "Partner Search Clarification",
+              "faqs": [
+                {
+                  "question": "Is Kaumar for finding life partners within the community?",
+                  "answer": "While members may form connections and friendships within the community, the primary purpose of Kaumar is not to facilitate the search for life partners among its members. Our community serves as a supportive network that provides emotional, practical, and informational support and may offer recommendations and resources to aid in the search for life partners externally."
+                }
+              ]
+            },
+            {
+              "title": "Privacy and Safety",
+              "faqs": [
+                {
+                  "question": "How does the community ensure member privacy and safety?",
+                  "answer": "Kaumar is committed to maintaining member privacy and safety. All interactions within the community are confidential, and we have moderators to ensure discussions remain constructive and supportive. We also have safety measures in place to protect members from harassment or inappropriate behavior."
+                },
+                {
+                  "question": "What should I do if I encounter inappropriate behavior?",
+                  "answer": "If you encounter any inappropriate behavior, please report it to the community moderators immediately. We take all reports seriously and will take appropriate action to address the issue."
+                }
+              ]
+            },
+            {
+              "title": "Additional Resources",
+              "faqs": [
+                {
+                  "question": "Are there any resources available for members?",
+                  "answer": "Yes, we offer a resource library with articles, videos, and guides on various topics related to relationships, marriage, and cultural preservation. Members can access these resources to enhance their understanding and support within the community."
+                }
+              ]
+            }
           ]
+
         }
       },
       methods: {
-        cardAction(id){
+        cardAction(id) {
           console.log(`Card action: ${id}`);
           this.$refs[id].scrollIntoView({ behavior: 'smooth' });
         }
@@ -761,7 +855,7 @@
             'mdi-twitter',
             'mdi-linkedin',
             'mdi-instagram',
-          ]          
+          ]
         };
       },
       methods: {
