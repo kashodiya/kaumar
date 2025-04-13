@@ -9,8 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@3.7.15/dist/vuetify.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@3.7.15/dist/vuetify-labs.min.css" rel="stylesheet">
-  <style>
-  </style>
 
   <!-- <script type="text/x-template" id="xyz-template">
     <v-container fluid>
@@ -40,6 +38,37 @@
         <p class="mt-5">Connect, Share, and Thrive Together!</p>
       </div>
       <p class="text-h5 mt-10">Join a vibrant community where Indian-origin parents and young adults come together to support each other, share experiences, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives.</p>
+
+      <v-row class="mt-10 ml-10 mr-10">
+        <v-col
+          v-for="(card, index) in cards"
+          :key="index"
+          cols="12"
+          md="4"
+          class="d-flex">
+          <v-card
+            class="mx-auto flex-card" hover
+            @click="cardAction"
+            max-width="500">
+            <v-img
+              class="align-end text-white"
+              height="150"
+              :src="card.image"
+              cover>
+              <v-card-title class="text-wrap text-h5">{{card.title}}</v-card-title>
+            </v-img>
+            <v-card-text class="flex-grow-1">
+              <div class="text-h6">{{card.description}}</div>
+            </v-card-text>
+            <!-- <v-card-actions>
+              <v-btn XXcolor="orange" :text="card.buttonCaption"></v-btn>
+            </v-card-actions> -->
+          </v-card>
+        </v-col>
+      </v-row>
+
+
+
     </v-container>
   </script>
 
@@ -50,6 +79,17 @@
       background-position: top; /* Align the image to the top */
       width: 100%; /* Ensure the element takes the full width of its container */
     }
+
+    .flex-card {
+      display: flex;
+      flex-direction: column;
+      height: 400px; /* Set a fixed height for the card */
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }    
+
   </style>
 </head>
 
@@ -57,7 +97,11 @@
   <div id="app">
     <v-app  class="app-style">
       <v-app-bar flat color="transparent">
-        <v-app-bar-title class="font-weight-bold">Kaumar</v-app-bar-title>
+        <v-app-bar-title class="font-weight-boldww"
+          @click="$router.push('/')">
+          Kaumar
+        </v-app-bar-title>
+
         <v-spacer></v-spacer>
         <v-btn class="XXmt-5" to="/">Home</v-btn>
         <v-btn class="XXmt-5" to="/about">About</v-btn>
@@ -96,9 +140,33 @@
       data: function () {
         return {
           state: store.state,
+          cards: [
+            {
+              title: "Become a Part of Our Community",
+              description: "Ready to connect with like-minded individuals and start sharing your experiences? Join Kaumar today and become a part of a supportive network of Indian-origin parents and young adults.",
+              buttonCaption: "Join Us Now",
+              image: "/images/card-background.jpeg", // Replace with your image URL
+            },
+            {
+              title: "Discover What Kaumar Offers",
+              description: "Curious about how Kaumar can support you and your family? Learn more about our community, events, resources, and the benefits of membership.",
+              buttonCaption: "Learn More",
+              image: "/images/card-background.jpeg", // Replace with your image URL
+            },
+            {
+              title: "Make a Difference with Kaumar",
+              description: "Passionate about helping others? Become a volunteer and contribute to our community by supporting events, sharing your expertise, and making a positive impact.",
+              buttonCaption: "Become a Volunteer",
+              image: "/images/card-background.jpeg", // Replace with your image URL
+            }
+          ]
         }
       },
       methods: {
+        cardAction(){
+          console.log('Card action');
+          
+        }
       },
       mounted() {
         console.log('Home mounted');
