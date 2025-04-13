@@ -30,12 +30,9 @@
 
   <script type="text/x-template" id="faq-template">
     <v-container fluid>
-
       <v-card>
         <v-card-title class="text-h5">FAQ</v-card-title>
         <v-card-text>
-
-
           <v-row>
             <v-col
               v-for="(faqGroup, groupIndex) in faqs"
@@ -61,14 +58,8 @@
               </v-card>
             </v-col>
           </v-row>          
-
         </v-card-text>
       </v-card>
-
-
-
-
-
     </v-container>
   </script>
 
@@ -117,116 +108,45 @@
           <div ref="learnMore">
             <v-row>
               <v-col>
-                <v-card>
+                <v-card class="pb-10">
 
-                  <v-card-title class="mt-4">What is Kaumar Community?</v-card-title>
+                  <v-card-title class="font-weight-bold mt-4">What is Kaumar Community?</v-card-title>
                   <v-card-text>
                     <p>Kaumar community for Indian-origin parents and their young adult children residing in the United States. Our focus is on creating a supportive and inclusive environment where members can share experiences, offer mutual support, and navigate the journey of relationships and marriage with cultural understanding and modern perspectives.</p>
                   </v-card-text>
-                  <v-card-title>Goals and Objectives:</v-card-title>
-                  <v-card-text>
-                    <v-list>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Cultivate a Sense of Belonging:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Create an inclusive environment where both parents and young adults feel connected and supported by like-minded individuals who understand and share similar cultural and familial values.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Mutual Support System:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Enable parents and young adults to offer and receive emotional, practical, and informational support from one another, fostering a collaborative and empathetic community.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Experience Sharing Platform:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Provide a dedicated space for parents to share their experiences, challenges, and successes in guiding their children through the process of finding life partners, and for young adults to share their perspectives, experiences, and advice on relationships and marriage.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Facilitate Intergenerational Understanding:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Promote meaningful interactions between parents and young adults to enhance mutual understanding, respect, and support across generations.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Empower Young Adults:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Equip young adults with the tools, resources, and support they need to navigate their relationships and marriage journeys confidently and successfully.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Cultural Preservation and Integration:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Support the preservation of Indian cultural values and traditions while helping members integrate these values into modern relationship dynamics in the US context.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Resource and Networking Hub:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Serve as a central hub for valuable resources, recommendations, and networking opportunities to aid both parents and young adults in their search for life partners and in building fulfilling relationships.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    </v-list>
-                  </v-card-text>
-
-                  <v-card-title>Essential Rules for Community Harmony:</v-card-title>
-                  <v-card-text>
-                    <v-list>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Be Respectful and Inclusive:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Treat everyone with kindness and avoid any form of discrimination.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Stay On-Topic:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Keep discussions relevant to our group’s purpose.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Respect Privacy:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Maintain confidentiality of shared information.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Offer Constructive Feedback:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Provide helpful and positive advice.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Avoid Self-Promotion:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Refrain from promoting products or services.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Handle Conflicts Gracefully:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Resolve disputes amicably and report any issues to admins.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Use Appropriate Language:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Keep communications clear and considerate.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    </v-list>
-                  </v-card-text>
 
 
-                  <v-card-title class="mt-4">Clarification on Partner Search:</v-card-title>
+                  <v-card-title class="font-weight-bold mt-10">Goals and Objectives</v-card-title>
+                  <v-row class="pl-10 pr-10">
+                    <v-col
+                      v-for="(item, index) in goalsAndObjectives"
+                      :key="index" cols="12" md="6" lg="4">
+                      <v-card class="mx-auto">
+                        <v-card-title class="text-wrap headline">{{ item.title }}</v-card-title>
+                        <v-card-text>
+                          {{ item.description }}
+                        </v-card-text>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+                  <v-card-title class="font-weight-bold mt-10">Essential Rules for Community Harmony</v-card-title>
+                  <v-row class="pl-10 pr-10">
+                    <v-col
+                      v-for="(item, index) in rules"
+                      :key="index" cols="12" md="6" lg="4">
+                      <v-card class="mx-auto">
+                        <v-card-title class="text-wrap headline">{{ item.title }}</v-card-title>
+                        <v-card-text>
+                          {{ item.description }}
+                        </v-card-text>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+
+
+                  <v-card-title class="font-weight-bold mt-10">Clarification on Partner Search:</v-card-title>
                   <v-card-text>
                     <p>While members may form connections and friendships within the community, it is important to note that the primary purpose of Kaumar community is <strong>not</strong> to facilitate the search for life partners among its members. Our community serves as a robust network that provides emotional, practical, and informational support, and may offer recommendations and resources to aid in the search for life partners externally. However, <strong>direct matchmaking within the community is not its core function</strong>.
                     </p>
@@ -243,7 +163,7 @@
       <v-row class="mt-10 ml-10 mr-10">
         <v-col>
           <div ref="joinUs">
-            <v-card>
+            <v-card class="pb-10">
               <v-card-title>Join Our Community</v-card-title>
               <v-card-text>
                 <p>Welcome! We're excited to have you join our community. Follow the steps below to get started:</p>
@@ -270,8 +190,8 @@
           <div ref="becomeVolunteer">
 
 
-            <v-card XXclass="mx-auto" XXmax-width="800">
-              <v-card-title class="headline">Become a Volunteer</v-card-title>
+            <v-card class="pb-10">
+              <v-card-title class="font-weight-bold mt-10">Become a Volunteer</v-card-title>
               <v-card-text>
                 <v-row>
                   <v-col>
@@ -290,92 +210,43 @@
                 </v-row>
                 <v-row>
                   <v-col>
-                    <v-card-title>Why Volunteer with Us?</v-card-title>
-                    <v-list>
-                      <v-list-item>
+                    <v-card-title class="font-weight-bold mt-10">Why Volunteer with Us?</v-card-title>
+                    <v-row class="pl-10 pr-10">
+                      <v-col
+                        v-for="(item, index) in whyVolunteer"
+                        :key="index" cols="12" md="6" lg="4">
+                        <v-card class="mx-auto">
+                          <v-card-title class="text-wrap headline">{{ item.title }}</v-card-title>
+                          <v-card-text>
+                            {{ item.description }}
+                          </v-card-text>
+                        </v-card>
+                      </v-col>
+                    </v-row>
 
-                        <v-list-item-title class="font-weight-bold">Make a Difference:</v-list-item-title>
-                          <v-list-item-subtitle>
-                            Contribute to a community that values cultural preservation, intergenerational understanding, and mutual support.
-                          </v-list-item-subtitle>
-                        </v-list-item>
-
-                        <v-list-item-title class="font-weight-bold">Share Your Expertise:<v-list-item-title>
-                          <v-list-item-subtitle>
-                            Offer your knowledge and experience to help parents and young adults navigate the complexities of relationships and marriage.                          
-                          </v-list-item-subtitle>
-                        </v-list-item>
-
-                        <v-list-item-title class="font-weight-bold">:Build Connections</v-list-item-title>
-                          <v-list-item-subtitle>
-                            Engage with like-minded individuals and form meaningful relationships within the community.
-                          </v-list-item-subtitle>
-                        </v-list-item>
-
-                        <v-list-item-title class="font-weight-bold">Personal Growth:</v-list-item-title>
-                          <v-list-item-subtitle>
-                            Enhance your own skills and perspectives by interacting with a diverse group of members.
-                          </v-list-item-subtitle>
-                        </v-list-item>
-                    </v-list>
 
                   </v-col>
                 </v-row>
                 <v-row>
                   <v-col>
-                    <v-card-title>How You Can Contribute?</v-card-title>
-                    <v-list>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Mentorship and Guidance:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Provide mentorship to young adults, offering advice and support as
-                        they navigate their relationships. Share your experiences
-                        and insights with parents to help them guide their children
-                        effectively.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Event Planning and Execution:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Assist in
-                        organizing and hosting community events, workshops, and
-                        virtual meetups. Help create engaging activities that
-                        promote interaction and learning.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Content Creation:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Contribute articles,
-                        videos, or other resources that provide valuable information
-                        and support to community members. Share success stories,
-                        tips, and cultural insights.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Moderation and Support:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Serve as a
-                        moderator for community discussions, ensuring a respectful
-                        and supportive environment. Provide assistance and support
-                        to members who may need guidance or have questions.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-title class="font-weight-bold">Outreach and Promotion:</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Help spread the
-                        word about our community to attract new members. Collaborate
-                        with local Indian cultural organizations and community
-                        leaders to promote our initiatives.
-                        </v-list-item-subtitle>
-                      </v-list-item>
-                    </v-list>
+                    <v-card-title class="font-weight-bold mt-10">How You Can Contribute?</v-card-title>
+                    <v-row class="pl-10 pr-10">
+                      <v-col
+                        v-for="(item, index) in howToContribute"
+                        :key="index" cols="12" md="6" lg="4">
+                        <v-card class="mx-auto">
+                          <v-card-title class="text-wrap headline">{{ item.title }}</v-card-title>
+                          <v-card-text>
+                            {{ item.description }}
+                          </v-card-text>
+                        </v-card>
+                      </v-col>
+                    </v-row>
                   </v-col>
                 </v-row>
                 <v-row>
                   <v-col>
-                    <v-card-title>How to Get Started?</v-card-title>
+                    <v-card-title class="font-weight-bold mt-10">How to Get Started?</v-card-title>
                     <p>
                       If you are interested in volunteering, please fill out the
                       form below or contact us directly at
@@ -521,6 +392,106 @@
               image: "/images/card-background.jpeg", // Replace with your image URL
             }
           ],
+          goalsAndObjectives: [
+            {
+              "title": "Cultivate a Sense of Belonging:",
+              "description": "Create an inclusive environment where both parents and young adults feel connected and supported by like-minded individuals who understand and share similar cultural and familial values."
+            },
+            {
+              "title": "Mutual Support System:",
+              "description": "Enable parents and young adults to offer and receive emotional, practical, and informational support from one another, fostering a collaborative and empathetic community."
+            },
+            {
+              "title": "Experience Sharing Platform:",
+              "description": "Provide a dedicated space for parents to share their experiences, challenges, and successes in guiding their children through the process of finding life partners, and for young adults to share their perspectives, experiences, and advice on relationships and marriage."
+            },
+            {
+              "title": "Facilitate Intergenerational Understanding:",
+              "description": "Promote meaningful interactions between parents and young adults to enhance mutual understanding, respect, and support across generations."
+            },
+            {
+              "title": "Empower Young Adults:",
+              "description": "Equip young adults with the tools, resources, and support they need to navigate their relationships and marriage journeys confidently and successfully."
+            },
+            {
+              "title": "Cultural Preservation and Integration:",
+              "description": "Support the preservation of Indian cultural values and traditions while helping members integrate these values into modern relationship dynamics in the US context."
+            },
+            {
+              "title": "Resource and Networking Hub:",
+              "description": "Serve as a central hub for valuable resources, recommendations, and networking opportunities to aid both parents and young adults in their search for life partners and in building fulfilling relationships."
+            }
+          ],
+          rules: [
+            {
+              "title": "Be Respectful and Inclusive:",
+              "description": "Treat everyone with kindness and avoid any form of discrimination."
+            },
+            {
+              "title": "Stay On-Topic:",
+              "description": "Keep discussions relevant to our group\u2019s purpose."
+            },
+            {
+              "title": "Respect Privacy:",
+              "description": "Maintain confidentiality of shared information."
+            },
+            {
+              "title": "Offer Constructive Feedback:",
+              "description": "Provide helpful and positive advice."
+            },
+            {
+              "title": "Avoid Self-Promotion:",
+              "description": "Refrain from promoting products or services."
+            },
+            {
+              "title": "Handle Conflicts Gracefully:",
+              "description": "Resolve disputes amicably and report any issues to admins."
+            },
+            {
+              "title": "Use Appropriate Language:",
+              "description": "Keep communications clear and considerate."
+            }
+          ],
+          whyVolunteer: [
+            {
+              "title": "Make a Difference:",
+              "description": "Contribute to a community that values cultural preservation, intergenerational understanding, and mutual support."
+            },
+            {
+              "title": "Share Your Expertise:",
+              "description": "Offer your knowledge and experience to help parents and young adults navigate the complexities of relationships and marriage."
+            },
+            {
+              "title": "Build Connections:",
+              "description": "Engage with like-minded individuals and form meaningful relationships within the community."
+            },
+            {
+              "title": "Personal Growth:",
+              "description": "Enhance your own skills and perspectives by interacting with a diverse group of members."
+            }
+          ],
+          howToContribute: [
+            {
+              "title": "Mentorship and Guidance:",
+              "description": "Provide mentorship to young adults, offering advice and support as they navigate their relationships. Share your experiences and insights with parents to help them guide their children effectively."
+            },
+            {
+              "title": "Event Planning and Execution:",
+              "description": "Assist in organizing and hosting community events, workshops, and virtual meetups. Help create engaging activities that promote interaction and learning."
+            },
+            {
+              "title": "Content Creation:",
+              "description": "Contribute articles, videos, or other resources that provide valuable information and support to community members. Share success stories, tips, and cultural insights."
+            },
+            {
+              "title": "Moderation and Support:",
+              "description": "Serve as a moderator for community discussions, ensuring a respectful and supportive environment. Provide assistance and support to members who may need guidance or have questions."
+            },
+            {
+              "title": "Outreach and Promotion:",
+              "description": "Help spread the word about our community to attract new members. Collaborate with local Indian cultural organizations and community leaders to promote our initiatives."
+            }
+          ]
         }
       },
       methods: {
@@ -639,7 +610,7 @@
                 }
               ]
             }
-          ]          
+          ]
         }
       },
       methods: {
