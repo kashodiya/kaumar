@@ -160,26 +160,129 @@
       <v-row class="mt-10 ml-10 mr-10">
         <v-col>
           <div ref="becomeVolunteer">
-            <v-card>
-              <v-card-title>Become Volunteer</v-card-title>
+
+
+            <v-card XXclass="mx-auto" XXmax-width="800">
+              <v-card-title class="headline">Become a Volunteer</v-card-title>
               <v-card-text>
-                <p>Welcome! We're excited to have you join our community. Follow the steps below to get started:</p>
-                <v-list>
-                  <v-list-item>
-                    <v-list-item-title>Watch our tutorial videos</v-list-item-title>
-                  </v-list-item>
-                  <v-list-item>
-                    <v-list-item-title><a href="https://www.youtube.com/watch?v=example1" target="_blank">Video 1: How to Register</a></v-list-item-title>
-                  </v-list-item>
-                  <v-list-item>
-                    <v-list-item-title><a href="https://www.youtube.com/watch?v=example2" target="_blank">Video 2: Completing Your Profile</a></v-list-item-title>
-                  </v-list-item>
-                  <!-- Add more videos as needed -->
-                </v-list>
-                <v-btn color="primary" href="https://forms.gle/yourGoogleFormLink" target="_blank">Fill the Registration Form</v-btn>
+                <v-row>
+                  <v-col>
+                    <p>
+                      Join us in building a supportive community!
+                    </p>
+                    <p>
+                      We are passionate about creating a vibrant and supportive
+                      community for Indian-origin parents and their young adult
+                      children in the United States. Your experience, insights, and
+                      dedication can make a significant impact. We invite you to
+                      become a volunteer and help us foster an environment where
+                      members feel connected, supported, and empowered.
+                    </p>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col>
+                    <v-card-title>Why Volunteer with Us?</v-card-title>
+                    <v-list>
+                      <v-list-item>
+
+                        <v-list-item-title class="font-weight-bold">Make a Difference:</v-list-item-title>
+                          <v-list-item-subtitle>
+                            Contribute to a community that values cultural preservation, intergenerational understanding, and mutual support.
+                          </v-list-item-subtitle>
+                        </v-list-item>
+
+                        <v-list-item-title class="font-weight-bold">Share Your Expertise:<v-list-item-title>
+                          <v-list-item-subtitle>
+                            Offer your knowledge and experience to help parents and young adults navigate the complexities of relationships and marriage.                          
+                          </v-list-item-subtitle>
+                        </v-list-item>
+
+                        <v-list-item-title class="font-weight-bold">:Build Connections</v-list-item-title>
+                          <v-list-item-subtitle>
+                            Engage with like-minded individuals and form meaningful relationships within the community.
+                          </v-list-item-subtitle>
+                        </v-list-item>
+
+                        <v-list-item-title class="font-weight-bold">Personal Growth:</v-list-item-title>
+                          <v-list-item-subtitle>
+                            Enhance your own skills and perspectives by interacting with a diverse group of members.
+                          </v-list-item-subtitle>
+                        </v-list-item>
+                    </v-list>
+
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col>
+                    <v-card-title>How You Can Contribute?</v-card-title>
+                    <v-list>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Mentorship and Guidance:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Provide mentorship to young adults, offering advice and support as
+                        they navigate their relationships. Share your experiences
+                        and insights with parents to help them guide their children
+                        effectively.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Event Planning and Execution:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Assist in
+                        organizing and hosting community events, workshops, and
+                        virtual meetups. Help create engaging activities that
+                        promote interaction and learning.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Content Creation:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Contribute articles,
+                        videos, or other resources that provide valuable information
+                        and support to community members. Share success stories,
+                        tips, and cultural insights.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Moderation and Support:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Serve as a
+                        moderator for community discussions, ensuring a respectful
+                        and supportive environment. Provide assistance and support
+                        to members who may need guidance or have questions.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-title class="font-weight-bold">Outreach and Promotion:</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Help spread the
+                        word about our community to attract new members. Collaborate
+                        with local Indian cultural organizations and community
+                        leaders to promote our initiatives.
+                        </v-list-item-subtitle>
+                      </v-list-item>
+                    </v-list>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col>
+                    <v-card-title>How to Get Started?</v-card-title>
+                    <p>
+                      If you are interested in volunteering, please fill out the
+                      form below or contact us directly at
+                      <a href="mailto:youremail@example.com"
+                        >youremail@example.com</a
+                      >. We will reach out to discuss your interests, availability,
+                      and how you can best contribute to our community.
+                    </p>
+                    <v-btn class="mt-5" color="primary" href="/volunteer-application"
+                      >Volunteer Application Form</v-btn
+                    >
+                  </v-col>
+                </v-row>
               </v-card-text>
             </v-card>
-
 
           </div>
         </v-col>
@@ -221,13 +324,38 @@
         </v-app-bar-title>
 
         <v-spacer></v-spacer>
-        <v-btn class="XXmt-5" to="/">Home</v-btn>
-        <v-btn class="XXmt-5" to="/about">About</v-btn>
+        <v-btn variant="plain" class="XXmt-5" to="/">Home</v-btn>
+        <v-btn variant="plain" class="XXmt-5" to="/about">About</v-btn>
       </v-app-bar>
 
       <v-main>
         <router-view></router-view>
       </v-main>
+
+
+      <v-footer class="text-center d-flex flex-column ga-2 py-4 mt-10" color="indigo-lighten-1">
+        <div class="d-flex ga-3">
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            :icon="icon"
+            density="comfortable"
+            variant="text"
+          ></v-btn>
+        </div>
+    
+        <v-divider class="my-2" thickness="2" width="50"></v-divider>
+    
+        <div class="text-caption font-weight-regular opacity-60">
+          Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        </div>
+    
+        <v-divider></v-divider>
+    
+        <div>
+          {{ new Date().getFullYear() }} — <strong>Kaumar</strong>
+        </div>
+      </v-footer>      
 
       <v-snackbar v-model="snackbar" :color="snackbarColor">
         {{ snackbarText }}
@@ -359,6 +487,12 @@
 
       data() {
         return {
+          icons: [
+            'mdi-facebook',
+            'mdi-twitter',
+            'mdi-linkedin',
+            'mdi-instagram',
+          ]          
         };
       },
       methods: {
